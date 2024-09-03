@@ -57,8 +57,9 @@
 }
 
 .img-hero {
-  width: 610px;
-  height: 610px;
+  width: 510px;
+  height: 510px;
+  object-fit: contain;
 }
 
 .orange-line {
