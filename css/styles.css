@@ -317,6 +317,11 @@ body {
 
 .socials a {
   color: #252420;
+  display: block;
+}
+
+.socials svg {
+  display: block;
 }
 
 .socials a:hover {
