@@ -41,6 +41,8 @@ body {
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
+  margin-right: 32px;
 }
 
 .sitenav-link {
@@ -52,6 +54,14 @@ body {
   text-decoration: none;
   color: #000;
   transition: color 0.4s ease, opacity 0.4s ease;
+}
+
+.site-nav-item {
+  margin-right: 32px;
+}
+
+.site-nav-item:last-child {
+  margin: 0;
 }
 
 .sitenav-link:hover {
@@ -116,6 +126,8 @@ body {
   height: 3px;
   background-color: #ff7500;
   border: none;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .hero-heading {
@@ -125,6 +137,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.5px;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .hero-text {
@@ -133,6 +147,8 @@ body {
   line-height: 24px;
   letter-spacing: 0.5px;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 /* site features */
 .features {
@@ -142,9 +158,9 @@ body {
 
 .features-list {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .features-heading {
@@ -160,12 +176,19 @@ body {
   line-height: 86.4px;
   letter-spacing: 0.5px;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 .feature {
   width: Fixed (340px) px;
   height: Hug (245px) px;
   gap: 32px;
   opacity: 0px;
+  margin-right: 40px;
+}
+
+.feature:last-child {
+  margin: 0;
 }
 
 .feature-icon-wrapper {
@@ -231,6 +254,8 @@ body {
   line-height: 48px;
   letter-spacing: 0.5px;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .promo-text {
@@ -239,6 +264,16 @@ body {
   line-height: 24px;
   letter-spacing: 0.5px;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.promo-text:last-child {
+  margin: 0;
+}
+
+.promo-info-wrapper {
+  margin-bottom: 24px;
 }
 
 .promo-highlight {
@@ -269,6 +304,15 @@ body {
   display: flex;
   align-items: center;
   padding: 0;
+  margin: 0;
+}
+
+.socials li {
+  margin-right: 16px;
+}
+
+.socials li:last-child {
+  margin: 0;
 }
 
 .socials a {
@@ -292,16 +336,24 @@ body {
   background: #25242080;
   height: 2px;
   border: 0;
+  margin-top: 40px;
+  margin-bottom: 64px;
 }
 
 .site-footer-bottom {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 
 .site-footer-link-list {
   width: 224px;
+  padding: 0;
+  margin: 0;
+  margin-right: 68px;
+  list-style: none;
+}
+
+.site-footer-link-list:last-child {
+  margin: 0;
 }
 
 .site-footer-link-list a {
