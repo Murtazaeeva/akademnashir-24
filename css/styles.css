@@ -11,9 +11,12 @@ body {
 
 .site-header {
   display: flex;
+  border-top: 5px solid #ff7500;
   align-items: center;
   justify-content: space-between;
   background: #ffffff;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo-link {
@@ -37,6 +40,7 @@ body {
 .sitenav-list {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .sitenav-link {
@@ -59,8 +63,11 @@ body {
 }
 
 .main-link {
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 4px;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 15.23px;
   letter-spacing: 0.5px;
   text-align: left;
@@ -83,6 +90,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: #252420;
   color: #ffffff;
 }
@@ -99,12 +108,14 @@ body {
   width: 510px;
   height: 510px;
   object-fit: contain;
+  border-radius: 8px;
 }
 
 .orange-line {
   width: 80px;
   height: 3px;
   background-color: #ff7500;
+  border: none;
 }
 
 .hero-heading {
@@ -124,10 +135,16 @@ body {
   text-align: left;
 }
 /* site features */
+.features {
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
+
 .features-list {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  padding: 0;
 }
 
 .features-heading {
@@ -152,8 +169,12 @@ body {
 }
 
 .feature-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
+  border-radius: 50%;
   background: #ff750033;
 }
 
@@ -186,6 +207,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* 
+  padding-top: 120px;
+  padding-bottom: 160px;
+   */
+  border-radius: 12px;
   background: #252420;
   color: #ffffff;
 }
@@ -222,10 +248,17 @@ body {
 .promo-img {
   width: 440px;
   height: 440px;
+  border-radius: 12px;
   object-fit: cover;
 }
 
 /* sire footer */
+.site-footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background: #f8f8f8;
+}
+
 .site-footer-top {
   display: flex;
   align-items: center;
@@ -235,6 +268,7 @@ body {
 .socials {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
 .socials a {
@@ -249,16 +283,15 @@ body {
   opacity: 0.6;
 }
 
-.site-footer {
-  background: #f8f8f8;
-}
 .site-footer ul {
+  padding: 0;
   list-style: none;
 }
 
 .site-footer-divider {
   background: #25242080;
   height: 2px;
+  border: 0;
 }
 
 .site-footer-bottom {
