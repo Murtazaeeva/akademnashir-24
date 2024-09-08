@@ -1,4 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  padding: 0;
+  margin: 0;
   font-style: 16px;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
@@ -9,11 +15,25 @@ body {
   outline-offset: 3px;
 }
 
-.site-header {
+/* CONTAINER */
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header-container {
   display: flex;
-  border-top: 5px solid #ff7500;
   align-items: center;
   justify-content: space-between;
+}
+
+.site-header {
+  border-top: 5px solid #ff7500;
   background: #ffffff;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -100,10 +120,13 @@ body {
 }
 
 /* site hero */
-.hero {
+.hero-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.hero {
   padding-top: 80px;
   padding-bottom: 80px;
   background: #252420;
@@ -123,6 +146,7 @@ body {
   height: 510px;
   object-fit: contain;
   border-radius: 8px;
+  box-shadow: 24px 24px 0 0 #FF750099;
 }
 
 .orange-line {
@@ -201,23 +225,21 @@ body {
   align-items: center;
   width: 100px;
   height: 100px;
+  margin-bottom: 32px;
   border-radius: 50%;
   background: #ff750033;
 }
 
 .feature-titile {
-  width: 214px;
-  height: 29px;
-  gap: 0px;
-  opacity: 0px;
+  margin-top: 0;
+  margin-bottom: 12px;
   font-size: 24px;
-  font-weight: 700;
-  line-height: 28.8px;
-  letter-spacing: 0.5px;
-  text-align: left;
+  line-height: 1.2;
+ font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
 }
 
 .feature-info {
+  margin: 0;
   width: 314px;
   height: 72px;
   gap: 0px;
@@ -231,17 +253,20 @@ body {
 
 /* site promo */
 .promo {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.promo-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* 
-  padding-top: 120px;
-  padding-bottom: 160px;
-   */
+  padding: 64px;
   border-radius: 12px;
   background: #252420;
   color: #ffffff;
 }
+
 .promo-content {
   width: 440px;
   height: 291px;
@@ -359,6 +384,14 @@ body {
   margin: 0;
   margin-right: 68px;
   list-style: none;
+}
+
+.site-footer-link-list li {
+  margin-bottom: 16px;
+}
+
+.site-footer-link-list li:last-child {
+  margin-bottom: 0;
 }
 
 .site-footer-link-list:last-child {
